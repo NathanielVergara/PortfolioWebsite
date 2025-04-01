@@ -1,0 +1,164 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #2f2f2f, #1e1e1e);
+    color: white;
+    padding: 50px 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 0 20px 40px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #181818;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* Paragraph Text Styles */
+p {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+/* Links Styles */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #d3d3d3;
+}
+
+/* Projects Grid */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Project Card Styles */
+.project {
+    background: #292929;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #2f2f2f, #1e1e1e);
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 100%;
+    margin-top: 60px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .project {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project {
+        width: 100%;
+    }
+}
+
+/* Card Button Styles */
+.card-button {
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.card-button:hover {
+    background-color: #c2185b;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+

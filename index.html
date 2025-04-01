@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Angelo Vergara - Fullstack Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4e73df, #2e59d9);
+            color: white;
+            padding: 50px;
+            font-size: 45px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            max-width: 100%;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 25px;
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            color: #333;
+            cursor: pointer;
+            border: 1px solid #e0e0e0;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h3 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #2e59d9, #4e73df);
+            color: white;
+            padding: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #4e73df;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #2e59d9;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
+        }
+
+        /* New styles for enhanced spacing and box-shadow */
+        section h2, .projects, footer {
+            margin-top: 20px;
+        }
+
+        .project {
+            transition: all 0.3s ease-in-out;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Nathaniel Angelo Vergara - Fullstack Developer
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am a 21-year-old Computer Science student with a strong foundation in programming, data structures, and database management, complemented by hands-on experience in machine learning, cybersecurity, and cloud computing. Proficient in Python, Java, JavaScript, and SQL, I excel in problem-solving, adaptability, and teamwork.</p>
+        <p>Currently, I am an intern at Clark Outsourcing, collaborating with the Development Team to enhance the company’s internal website using Angular and Laravel Lumen. This role has strengthened my technical expertise and ability to contribute effectively to real-world projects.</p>
+        <p>Beyond academics, I am an aspiring member of JCI, where I led a Blood Drive project in partnership with JCI Culiat and JBL, managing logistics, volunteer coordination, and outreach.</p>
+        <p>As a CLARAA athlete, I bring discipline, resilience, and a competitive mindset. Passionate about continuous learning and innovation, I strive to grow personally and professionally while making a meaningful impact in tech.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <!-- MangoGuard - Anthracnose Detection App -->
+            <div class="project" onclick="window.location.href='https://github.com/nathanielvergara/MangoGuard'">
+                <h3>MangoGuard - Anthracnose Detection App</h3>
+                <p>An easy-to-use mobile app utilizing ResNet-18 to help mango growers detect anthracnose disease on leaves with image processing, offering treatment and prevention tips.</p>
+            </div>
+    
+            <!-- TyphoonAid - Crypto Donation Platform -->
+            <div class="project" onclick="window.location.href='https://github.com/nathanielvergara/TyphoonAid'">
+                <h3>TyphoonAid - Crypto Donation Platform</h3>
+                <p>A donation site where people can quickly support communities hit by typhoons. Uses MetaMask for secure transactions and personal messages with donations.</p>
+            </div>
+    
+            <!-- Clone Reddit Website -->
+            <div class="project" onclick="window.location.href='https://github.com/NathanielVergara/Clone-Landing-Page-Reddit'">
+                <h3>Clone Landing Page Reddit Website</h3>
+                <p>A project that replicates the landing page of Reddit, showcasing skills in HTML, CSS, and responsive design. The page mimics Reddit’s layout and visual elements, offering a clean and minimalistic design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <p><strong>Clark Outsourcing (2024 Dec - Present)</strong><br>
+        Fullstack Developer (Intern)<br>
+        Contributed to the enhancement of Clark Outsourcing’s internal website by working closely with the Development Team, utilizing Angular and Laravel Lumen to improve functionality, optimize performance, and enhance user experience. Gained hands-on experience in full-stack development, problem-solving, and collaborating in a dynamic team environment.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Holy Angel University</strong><br>
+        Bachelor of Science in Computer Science (Expected 2025)</p>
+        <p><strong>Angeles University Foundation</strong><br>
+        Senior High School Diploma - Academic Track: Accountancy, Business & Management (2021)</p>
+        <p><strong>Christ In You Faith Christian Academy</strong><br>
+        High School Diploma (2019)</p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Getting Python Interview Ready by SimpleLearn (2025)</li>
+            <li>Getting Started with Interview Preparation by SimpleLearn (2025)</li>
+            <li>CISCO CyberOps Associate (2024)</li>
+            <li>AWS Academy Graduate - AWS Academy Cloud Foundations (2024)</li>
+            <li>CISCO CCNAv7 Introduction to Networks (2024)</li>
+            <li>CISCO Introduction to IoT (2021)</li>
+            <li>CISCO Introduction to Cybersecurity (2021)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Machine Learning (Intermediate)</li>
+            <li>Web Development (Intermediate)</li>
+            <li>Version Control (Intermediate)</li>
+            <li>Cloud Computing (Intermediate)</li>
+            <li>Database Management (SQL) (Intermediate)</li>
+            <li>MS Office (Excel, Word, PowerPoint, Outlook) (Intermediate)</li>
+            <li>Graphic Design (Intermediate)</li>
+            <li>Photography (Intermediate)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Tagalog: Intermediate (Written & Spoken)</li>
+            <li>English: Intermediate (Written & Spoken)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nutvergara7@gmail.com">nutvergara7@gmail.com</a></p>
+        <p>Location: Pampanga, Central Luzon (Region III)</p>
+        <p>Phone: <a href="tel:09859039120">09859039120</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Nathaniel Angelo Vergara
+    </footer>
+</body>
+</html>
